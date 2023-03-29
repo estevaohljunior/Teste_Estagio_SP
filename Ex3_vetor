@@ -1,0 +1,20 @@
+faturamento = [1000, 1200, 800, 1500, 1300, 1400, 900, 1100, 1000, 1300, 1200, 1400, 1100, 1200, 1300, 1400, 1500, 900, 1100, 1000, 1200, 800, 1300, 1400, 1500, 1200, 1100, 1000, 1300, 1200, 1400]
+
+# Menor valor de faturamento diário
+menor = min(faturamento)
+print("Menor valor de faturamento diário:", menor)
+
+# Maior valor de faturamento diário
+maior = max(faturamento)
+print("Maior valor de faturamento diário:", maior)
+
+# Média mensal de faturamento diário
+media = sum(faturamento) / len(faturamento)
+
+# Número de dias com faturamento diário superior à média mensal
+dias_acima_da_media = 0
+for valor in faturamento:
+    if valor > media:
+        dias_acima_da_media += 1
+
+print("Número de dias com faturamento diário superior à média mensal:", dias_acima_da_media)
